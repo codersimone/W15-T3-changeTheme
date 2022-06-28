@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Меняем фон документа</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Настрой свое окружение</h1>
+        <select id="theme" name="theme" onchange="changeTheme()">
+            <option disabled selected="selected">Выберите тему:</option>
+            <option class="light" value="0">Светлая</option>
+            <option class="dark" value="1">Темная</option>
+            <option class="blue" value="2">Синяя</option>
+        </select>
+        <div id="result"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
