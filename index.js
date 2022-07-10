@@ -1,8 +1,13 @@
 function changeTheme() {
-    if (document.getElementById("theme").value === "0")
-        document.body.className = "light";
-    if (document.getElementById("theme").value === "1")
-        document.body.className = "dark";
-    if (document.getElementById("theme").value === "2")
-        document.body.className = "blue";
+    const theme = document.getElementById("theme").value;
+    switch(theme) {
+        case 1: document.body.className = "light"; break;
+        case 2: document.body.className = "dark"; break;
+        case 3: document.body.className = "blue"; break;
+    }
+}
+
+function changeTheme2() {
+    const theme = document.getElementById("theme").value
+    document.body.className = theme;
 }
